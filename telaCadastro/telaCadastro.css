@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #c29b9b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#nome, #email, #senha{
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-group input, .input-group select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.genero label {
+    margin-right: 10px;
+    color: white;
+}
+
+.data-nascimento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-nascimento select {
+    width: 32%;
+    padding: 10px;
+    margin-right: 0; 
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-cadastrar {
+    background-color: #6f2c2c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #3b1919;
+}
+
+#dia, #mes, #ano, #genero, #empresa, #area{
+    color: rgb(71, 68, 68);
+}

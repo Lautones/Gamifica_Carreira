@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="telaCadastro.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="telaCadastro.js" defer></script>
+    </head>
+<body>
+    <div class="container">
+        <form class="form-cadastro">
+            <h2>CADASTRE-SE</h2>
+
+            <div class="infoPrincipais">
+                <div class="input-group">
+                    <label for="nome">
+                        <input type="text" id="nome" placeholder="Nome do Herói" required>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">
+                        <input type="email" id="email" placeholder="E-mail" required>
+                    </label>
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">
+                        <input type="password" id="senha" placeholder="Senha" required>
+                    </label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <div class="data-nascimento">
+                    <select id="dia" required></select>
+                    <select id="mes" required></select>
+                    <select id="ano" required></select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="genero">Gênero</label>
+                <select id="genero" required >
+                    <option value="" disabled selected>Selecione o gênero</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Outro</option>
+                </select>  
+            </div> 
+
+            <div class="input-group">
+                <label for="empresa">Empresa</label>
+                <select id="empresa" required>
+                    <option value="" disabled selected>Selecione a empresa</option>
+                    <option value="GFT">GFT</option>
+                    <option value="Nubank">Nubank</option>
+                    <option value="Ifood">Ifood</option>
+                    <option value="Itau">Itaú</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="area">Área de atuação</label>
+                <select id="area" required>
+                    <option value="" disabled selected>Selecione a área</option>
+                    <option value="Front-end">Front End</option>
+                    <option value="Back-end">Back End</option>
+                    <option value="Full-stack">Full Stack</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Tester">Tester</option>
+                    <option value="Cientista">Cientista de Dados</option>
+                    <option value="BI">Biseness Inteligence</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-cadastrar">INICIAR JORNADA</button>
+        </form>
+    </div>
+</body>
+</html>
