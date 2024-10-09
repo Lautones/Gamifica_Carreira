@@ -6,12 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    background-image: url("mago.png");
-    background-repeat: no-repeat;
-    background-size: 28%;
-    background-position: 78%;
-  
+    background-color: rgb(168, 164, 164);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,12 +19,21 @@ body {
     border-radius: 10px;
     width: 450px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .form-cadastro {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 7px;
+}
+
+.mago{
+    max-width: 100%;
+    position: absolute; 
+    height: auto;
+    width: 80%;
+    left: 81%;
 }
 
 #nome, #email, #senha{
@@ -39,7 +43,13 @@ body {
 h2 {
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+}
+h1 {
+    font-family: MedievalSharp, sans-serif;
+    text-align: center;
+    color: #6f2c2c;
+    margin-bottom: 0px;
 }
 
 .input-group {
